@@ -20,19 +20,13 @@ namespace ConsoleUI
                 new ExecutiveModel { FirstName = "Melissa", LastName = "Cortney"},
             };
 
-            List<EmployeeModel> employees = new List<EmployeeModel>();
+            var employees = Employees.Create(applicants);
 
-            foreach (var person in applicants)
-            {
-                employees.Add(person.AccountProcessor.Create(person));
-            }
-
-            foreach (var emp in employees)
-            {
-                Console.WriteLine($"{emp.FirstName} : {emp.LastName} : {emp.EmailAddress} IsManager: {emp.IsManager} IsExecutive {emp.IsExecutive}");
-            }
-
+            string employeeInfo = Employees.Display(employees);
+            Console.WriteLine(employeeInfo);
             Console.ReadLine();
+
+
         }
     }
 }
