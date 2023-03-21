@@ -1,4 +1,5 @@
-﻿using OCPLibrary;
+﻿using OCP__Library;
+using OCPLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +15,8 @@ namespace ConsoleUI
             List<PersonModel> applicants = new List<PersonModel>
             {
                 new PersonModel { FirstName = "Tim", LastName = "Corey"},
-                new PersonModel { FirstName = "Tony", LastName = "Balis"},
-                new PersonModel { FirstName = "Melissa", LastName = "Cortney"},
+                new PersonModel { FirstName = "Tony", LastName = "Balis", TypeOfEmployee = EmployeeType.Executive},
+                new PersonModel { FirstName = "Melissa", LastName = "Cortney", TypeOfEmployee = EmployeeType.Manager},
             };
 
             List<EmployeeModel> employees = new List<EmployeeModel>();
@@ -28,7 +29,7 @@ namespace ConsoleUI
 
             foreach (var emp in employees)
             {
-                Console.WriteLine($"{emp.FirstName} : {emp.LastName} : {emp.EmailAddress} IsManager: {emp.IsManager}");
+                Console.WriteLine($"{emp.FirstName} : {emp.LastName} : {emp.EmailAddress} IsManager: {emp.IsManager} IsExecutive {emp.IsExecutive}");
             }
 
             Console.ReadLine();

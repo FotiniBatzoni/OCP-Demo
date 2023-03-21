@@ -9,6 +9,7 @@ namespace OCP__Library
     public enum EmployeeType
     {
         Staff,
-        Manager
+        Manager,
+        Executive
     }
 }
