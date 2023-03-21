@@ -28,7 +28,7 @@ namespace ConsoleUI
 
             foreach (var emp in employees)
             {
-                Console.WriteLine($"{emp.FirstName} : {emp.LastName} : {emp.EmailAddress}");
+                Console.WriteLine($"{emp.FirstName} : {emp.LastName} : {emp.EmailAddress} IsManager: {emp.IsManager}");
             }
 
             Console.ReadLine();
