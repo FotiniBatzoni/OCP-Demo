@@ -1,4 +1,5 @@
-﻿using OCP__Library;
+﻿
+using OCP__Library;
 using OCPLibrary;
 using System;
 using System.Collections.Generic;
@@ -12,19 +13,18 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            List<PersonModel> applicants = new List<PersonModel>
+            List<IApplicantModel> applicants = new List<IApplicantModel>
             {
                 new PersonModel { FirstName = "Tim", LastName = "Corey"},
-                new PersonModel { FirstName = "Tony", LastName = "Balis"},
+                new ManagerModel { FirstName = "Tony", LastName = "Balis"},
                 new PersonModel { FirstName = "Melissa", LastName = "Cortney"},
             };
 
             List<EmployeeModel> employees = new List<EmployeeModel>();
-            Accounts accounProcessor = new Accounts();
 
             foreach (var person in applicants)
             {
-                employees.Add(accounProcessor.Create(person));
+                employees.Add(person.AccountProcessor.Create(person));
             }
 
             foreach (var emp in employees)
