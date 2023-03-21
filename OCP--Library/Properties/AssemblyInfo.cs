@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OCPLibrary")]
+[assembly: AssemblyTitle("OCP--Library")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OCPLibrary")]
+[assembly: AssemblyProduct("OCP--Library")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("95254e25-5cf8-4212-972d-b025de7afa9f")]
+[assembly: Guid("dc25f879-ec4a-47f0-8a1b-fe8e5e565136")]
 
 // Version information for an assembly consists of the following four values:
 //
